@@ -1,0 +1,14 @@
+package UD6_Tanda0;
+
+public class Ariketa3 {
+	public static String arrayMásPoblado (String[] arr1, String[] arr2) {
+		String masPoblado="";
+		
+		return masPoblado;
+	}
+	
+	public static void main(String[] args) {
+		arrayMásPoblado(args, args);
+	}
+
+}

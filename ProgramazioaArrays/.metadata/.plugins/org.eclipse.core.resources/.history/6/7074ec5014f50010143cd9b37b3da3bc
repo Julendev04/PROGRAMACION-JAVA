@@ -1,0 +1,34 @@
+package UD6_Tanda1;
+
+import java.util.Iterator;
+
+import Arrays.Kontsola;
+
+public class ZenbakiaAurkitu {
+	int [] arr;
+	public static void main(String[] args) {
+		int[] arr={1, 5, 8, 12, 15, 17};
+		
+		System.out.println("Esan zenbaki bat:");
+		int zenb=Kontsola.irakurriInt();
+	
+		for (int i = 0; i < arr.length; i++) {
+			int erdia=arr.length/2;
+			if (erdia>zenb) {
+				for (int j = 0; j < erdia; j++) {
+					if (arr[j]==zenb) {
+						System.out.println("Bai dago zenbaki hori array-an");
+					}
+				}
+					
+			} else if (erdia<zenb) {
+				for (int j = erdia; j < arr.length; j++) {
+					if (arr[j]==zenb) {
+						System.out.println("Bai dago zenbaki hori array-an");
+					}
+				}
+			}
+		}
+	}
+
+}

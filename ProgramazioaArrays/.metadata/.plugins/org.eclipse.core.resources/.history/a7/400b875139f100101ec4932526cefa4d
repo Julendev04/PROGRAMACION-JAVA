@@ -1,0 +1,48 @@
+package Arrays;
+
+public class Ordenatu {
+
+    public static void main(String[] args) {
+
+        int[] arr = new int[10];
+
+        // array inicial ordenado
+        for (int i = 0; i < 5; i++) {
+            arr[i] = 10 * i;
+        }
+
+        int tam = 5;
+
+        System.out.println("Sartu nahi duzun zenbakia:");
+        int n = Kontsola.irakurriInt();
+
+        int pos = posizioaAtera(arr, n, tam);
+        txertatu(arr, pos, n, tam);
+        tam++;
+
+        // mostrar array
+        for (int i = 0; i < tam; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+
+    // 🔹 Método para encontrar posición
+    public static int posizioaAtera(int[] arr, int n, int tam) {
+        int pos = 0;
+        for (int i = 0; i < tam; i++) {
+            if (n > arr[i]) {
+                pos = i + 1;
+            }
+        }
+        return pos;
+    }
+
+    // 🔹 Método para insertar
+    public static void txertatu(int[] arr, int pos, int n, int tam) {
+        for (int i = tam; i > pos; i--) {
+            arr[i] = arr[i - 1];
+        }
+        arr[pos] = n;
+    }
+}
+
