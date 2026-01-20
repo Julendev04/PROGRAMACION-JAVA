@@ -1,0 +1,10 @@
+package Arrays;
+
+public class pruebasString {
+	String aux="club atletico OSASUNA";
+	String emaitza="";
+	while (aux) {
+		
+	}
+
+}

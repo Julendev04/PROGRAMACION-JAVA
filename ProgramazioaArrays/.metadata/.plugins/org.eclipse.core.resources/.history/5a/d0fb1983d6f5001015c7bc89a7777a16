@@ -1,0 +1,40 @@
+package UD6_Tanda1;
+
+import java.util.Iterator;
+
+import Arrays.Kontsola;
+
+public class Ariketa2 {
+    public static void main(String[] args) {
+    	int n = 0;
+    	String[] arr = new String[100];
+    	String katea;
+
+    	while (true) {
+    	    System.out.println("Sartu katea:");
+    	    katea = Kontsola.irakurriString();
+    	    if (katea.equals("QUIT") || katea.equals("quit")) {
+    	        break;
+    	    }
+    	    arr[n] = katea;
+    	    n++;
+    	}
+
+    	for (int i = 0; i < n; i++) {
+    	    System.out.print(arr[i]+"\t");
+    	}
+    	System.out.println();
+    	
+    	String[] kop = new String[n];
+
+    	for (int i = 0; i < n; i++) {
+    		kop[i] = arr[n-1-i];
+    	}
+    	
+    	for (int i = 0; i < n; i++) {
+			System.out.print(kop[i].toUpperCase()+"\t");
+		}
+
+    }
+}
+

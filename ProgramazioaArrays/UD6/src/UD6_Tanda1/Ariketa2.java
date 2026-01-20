@@ -25,14 +25,14 @@ public class Ariketa2 {
     	}
     	System.out.println();
     	
-    	String[] kop = new String[n];
+    	String[] kopia = new String[n];
 
     	for (int i = 0; i < n; i++) {
-    		kop[i] = arr[n-1-i];
+    		kopia[i] = arr[n-1-i];
     	}
     	
     	for (int i = 0; i < n; i++) {
-			System.out.print(kop[i]+"\t");
+			System.out.print((kopia[i].charAt(0)+"").toUpperCase()+kopia[i].substring(1, kopia[i].length()).toLowerCase()+"\t");
 		}
 
     }

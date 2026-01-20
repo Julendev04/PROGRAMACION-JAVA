@@ -1,0 +1,29 @@
+package UD6_Tanda1;
+
+public class Laukizuzena {
+	int aldea1;
+	int aldea2;
+	public Laukizuzena(int aldea1, int aldea2) {
+		this.aldea1 = aldea1;
+		this.aldea2 = aldea2;
+	}
+	public Laukizuzena() {
+		this.aldea1=(int)(Math.random()*89)+2;
+		this.aldea2=(int)(Math.random()*89)+2;
+	}
+	
+	public double azalera() {
+		double azalera=1;
+		azalera=aldea1*aldea2;
+		return azalera;
+	}
+	
+	@Override
+	public String toString() {
+		return "Laukizuzena [aldea1=" + aldea1 + ", aldea2=" + aldea2 + "]";
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}
